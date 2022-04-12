@@ -11,7 +11,5 @@ npm install node-xlsx --save
 npm install JSONPath
 
 **To run the test**
-_Headless_
-npx cypress run
 _cypress runner_
 npx cypress open
