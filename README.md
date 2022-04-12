@@ -1,5 +1,5 @@
 # cassini
-Yahoo sign in
+_Yahoo sign in_
 An automated login test for yahoo.com
 
 Steps
