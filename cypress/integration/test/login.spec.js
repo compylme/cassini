@@ -53,7 +53,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 		 cy.get('@datedata').children().eq(1).invoke('prop','text').invoke('replace', /\u00a0/g, ' ').should('include', '19 Earnings')
 		 cy.get('@datedata').children().eq(2).invoke('prop','text').invoke('replace', /\u00a0/g, ' ').should('include', '22 Stock splits')
 		 cy.get('@datedata').children().eq(3).invoke('prop','text').invoke('replace', /\u00a0/g, ' ').should('include', '6 IPO pricing')
-		 cy.get('@datedata').children().eq(4).invoke('prop','text').invoke('replace', /\u00a0/g, ' ').should('include', '64 Economic events')
+		 cy.get('@datedata').children().eq(4).invoke('prop','text').invoke('replace', /\u00a0/g, ' ').should('include', '65 Economic events')
 			
 		
 		 

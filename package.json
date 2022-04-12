@@ -7,9 +7,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.20.2",
     "cypress": "^9.5.3",
-    "cypress-wait-until": "^1.7.2",
     "node-xlsx": "^0.21.0"
   },
   "dependencies": {
