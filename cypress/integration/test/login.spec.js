@@ -49,16 +49,22 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 		//arrange data
 		cy.april_11('datedata')
 
-		 //assert data returned
+		//tests
+		 //Assert the date 11Apr
+		 cy.get('@datedata').children().eq(0).invoke('prop','textContent').should('equal', "11AprMon")
+		 //assert earnings
 		 cy.get('@datedata').children().eq(1).invoke('prop','text').invoke('replace', /\u00a0/g, ' ')
 			.then((vals) => {let value = cy.wrap(vals)
 			expect(vals).to.equal(vals)})
+		 //assert stock splits
 		 cy.get('@datedata').children().eq(2).invoke('prop','text').invoke('replace', /\u00a0/g, ' ')
 			.then((vals) => {let value = cy.wrap(vals)
 			expect(vals).to.equal(vals)})
+		 //assert IPO pricing
 		 cy.get('@datedata').children().eq(3).invoke('prop','text').invoke('replace', /\u00a0/g, ' ')
 			.then((vals) => {let value = cy.wrap(vals)
 			expect(vals).to.equal(vals)})
+		 //assert economic events
 		 cy.get('@datedata').children().eq(4).invoke('prop','text').invoke('replace', /\u00a0/g, ' ')
 			.then((vals) => {let value = cy.wrap(vals)
 			expect(vals).to.equal(vals)})
